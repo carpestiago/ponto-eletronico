@@ -1,0 +1,125 @@
+.tela-login {
+  display: flex;
+  transform: translateX(-25%);
+  margin-top: 200px;
+  
+  .img-login {
+    transform: scale(0.6);
+  }
+  .password-card {
+    display: none;
+  }
+  .card {
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px 25px;
+    width: 300px;
+    
+    .form {
+      .input-block {
+        margin-bottom: 20px;
+      }
+      .btn-login {
+        display: block;
+        min-width: 120px;
+        border: none;
+        background-color: #29A3B9;
+        color: white;
+        margin: auto;
+        padding: 7px;
+        cursor: pointer;
+      }
+      input {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+        padding: 7px;
+        font-size: 16px;
+        color: #29A3B9;
+        border: 1px solid #ccddef;
+        outline-color: #29A3B9;
+      }
+    }
+  }
+}
+  
+//animations
+
+.card {
+  overflow: hidden;
+  animation-name: fade;
+  animation-duration: 900ms;
+}
+img {
+  overflow: hidden;
+  animation-name: fadeImg;
+  animation-duration: 1200ms;
+}
+  
+.input-block:nth-child(1) {
+  animation-name: move;
+  animation-duration: 500ms;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
+}
+.input-block:nth-child(2) {
+  animation-name: move;
+  animation-duration: 500ms;
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+}
+.btn-login {
+  animation-name: fadeButton;
+  animation-duration: 900ms;
+  animation-delay: 550ms;
+  animation-fill-mode: backwards;
+}
+.card-hide {
+  animation: ease-in;
+  animation-name: moveDown;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+
+}
+@keyframes moveDown {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  } to {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+@keyframes fadeButton {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  } to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-15%) scale(0.9);
+    opacity: 0;
+  } to {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+}

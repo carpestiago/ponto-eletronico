@@ -1,10 +1,27 @@
 body {
   margin: 0;
+  background-color: #6A5D5D;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./assets/images/background-login3.jpg');
+  background-size: cover;
+  overflow: hidden;
+    height: 100vh;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 code {

@@ -1,0 +1,21 @@
+.tela-nextPage {
+    .card {
+        margin: 20px 0;
+        background-color: white;
+        padding: 30px 25px;
+        width: 300px;
+
+        .btn-voltar {
+            display: block;
+            min-width: 120px;
+            border: none;
+            background-color: #29A3B9;
+            color: white;
+            margin: auto;
+            padding: 7px;
+            cursor: pointer;
+        }
+        
+        
+    }
+}
